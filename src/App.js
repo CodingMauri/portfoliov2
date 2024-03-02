@@ -9,13 +9,20 @@ function App() {
       <Hero />
       <About />
 
+
+
+      <h1 className = "text-white font-banner text-4xl bg-[#141414]  pt-10 pl-10 "> My Works </h1>
       {projects.map((project, index) => {
         return (
-          <Projects
-            key={project.id}
-            project={project}
-            isLeft={index % 2 == 0} //Alternates left right based on index
-          />
+        
+          
+
+            <Projects
+              key={project.id}
+              project={project}
+              isLeft={index % 2 == 0} //Alternates left right based on index
+            />
+        
         );
       })}
     </div>
